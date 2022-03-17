@@ -1,4 +1,4 @@
-$(Document).ready(function()
+$(document).ready(function()
 {
     let html = $('html')
     let p = $('p')
