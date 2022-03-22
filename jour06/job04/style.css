@@ -1,0 +1,67 @@
+header
+{
+    background-color:grey;
+    
+}
+.menugros
+{
+    display: block;
+    list-style: none;
+    display :flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#burger, #menupetit{
+    display: none;
+}
+
+main{
+    display: flex;
+}
+.section
+{
+    height: 30em;
+    width: 30em;
+    margin: 5em;
+    background-color: #88c1d0;
+}
+@media screen and (max-width: 768px) 
+{
+    main
+    {
+        display: flex ;
+        flex-direction: column;
+    }
+    .menugros
+    {
+        display: none;
+    }
+    #burger
+    {
+        display:block;
+        justify-content: flex-end;
+    } 
+    #menupetit
+    {
+        flex-direction: column;
+        list-style: none;
+        background-color: red;
+        align-items: center;
+        justify-items: center;
+    }  
+    header
+    {
+        display: flex;
+        justify-content: center;
+    }
+}    
+
+@media screen and (max-width: 1599px) 
+{
+    main
+    {
+        display: flex ;
+        flex-wrap: wrap;
+    }
+}
